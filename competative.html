@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeCode</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">WeCode</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact Us</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Topics
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="dsa.html">DSA</a></li>
+                  <li><a class="dropdown-item" href="webd.html">Web Development</a></li>
+                  <li><a class="dropdown-item" href="appd.html">App Development</a></li>
+                  <li><a class="dropdown-item" href="competative.html">Competative Programming</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                  
+                </ul>
+              </li>
+             
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+            
+          </div>
+          
+        </div>
+      </nav>
+      
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginModalLabel">Login to WeCode</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="signupModalLabel">Sign up to WeCode</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Mobile Number</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <br><br>
+  <div class="container">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+      </div>
+      <div class="carousel-inner container d-flex justify-content-center ">
+        <br>
+        <img src="cp.png" class="img-fluid" alt="..." height="600px" width="600px">
+          
+          
+        </div>
+        
+        <br>
+        <br><div class="container d-flex justify-content-center align-items-center ">
+        <p><h5>  Purchase Course: </h5>
+        </p>
+        
+        <a href='checkout.html'><button type="button" class="btn btn-primary" >
+          Purchase
+          </button>
+      </a>
+        
+      </div>
+       
+  
+  
+      <!-- START THE FEATURETTES -->
+  <div class="container flex justify-content-center align-items-center">
+      <hr class="featurette-divider">
+  
+      <div class="row featurette ">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">What is Competitive programming?  <span class="text-body-secondary">It’ll blow your mind.</span></h2>
+          <p class="lead">Competitive programming is a type of programming competition that challenges participants to solve complex programming problems within a given time limit. These competitions often involve solving algorithmic and mathematical problems that require strong problem-solving skills and knowledge of data structures and algorithms.</p>
+        </div>
+        <div class="col-md-3">
+            <img src="dsa5.jpg" class="img-fluid" alt="..." >
+            
+          
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-3">
+            <img src="dsa2.webp" class="img-fluid" alt="..." >
+            
+          
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">What is Competitive programming?   <span class="text-body-secondary">It’ll blow your mind.</span></h2>
+          <p class="lead">Competitive programming contests are held worldwide and attract participants from all levels of experience, including high school students, college students, and professionals. Participants compete against each other to solve a series of programming problems, with the winner being the one who solves the most problems in the shortest amount of time.</p>
+        </div>
+       
+      </div>
+  
+  
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">What is Competitive programming? <span class="text-body-secondary">It’ll blow your mind.</span></h2>
+          <p class="lead">Competitive programming challenges can range from simple problems, such as finding the sum of two numbers, to complex problems, such as solving a system of equations or designing an efficient algorithm for a specific task. The problems are designed to test a programmer's ability to think creatively, analyze problems, and write efficient code.</p>
+        </div>
+        <div class="col-md-3">
+            <img src="dsa4.jpg" class="img-fluid" alt="..." >
+            
+          
+        </div>
+      </div>
+  
+    </div>
+      <hr class="featurette-divider">
+  
+      
+    </div>
+  
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-primary">Home</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-primary">Topics</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-primary">About</a></li>
+        <li class="nav-item"><a href="checkout.html" class="nav-link px-2 text-body-primary">Checkout</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-body-primary">Contact Us</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+    </footer>
+</div>
+  </main>
+    </div></div></body></html>
